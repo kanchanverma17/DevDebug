@@ -12,7 +12,7 @@
 		0C1EEB432165086A004FFAC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EEB412165086A004FFAC8 /* Main.storyboard */; };
 		0C1EEB452165086B004FFAC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EEB442165086B004FFAC8 /* Assets.xcassets */; };
 		0C1EEB482165086B004FFAC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EEB462165086B004FFAC8 /* LaunchScreen.storyboard */; };
-		0C1EEB50216508A4004FFAC8 /* devRunDebugEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EEB4F216508A4004FFAC8 /* devRunDebugEvent.swift */; };
+		0CD960262167606B005B903B /* devRunDebugEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD960252167606B005B903B /* devRunDebugEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		0C1EEB442165086B004FFAC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1EEB472165086B004FFAC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1EEB492165086B004FFAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C1EEB4F216508A4004FFAC8 /* devRunDebugEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = devRunDebugEvent.swift; path = ../../../latestSVN/appypie_iPhone_Admob_freeserver/platforms/ios/SuperAppypie/Classes/devRunDebugEvent.swift; sourceTree = "<group>"; };
+		0CD960252167606B005B903B /* devRunDebugEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = devRunDebugEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +56,9 @@
 		0C1EEB3C2165086A004FFAC8 /* DevDebug */ = {
 			isa = PBXGroup;
 			children = (
+				0CD960252167606B005B903B /* devRunDebugEvent.swift */,
 				0C1EEB3D2165086A004FFAC8 /* AppDelegate.swift */,
 				0C1EEB3F2165086A004FFAC8 /* ViewController.swift */,
-				0C1EEB4F216508A4004FFAC8 /* devRunDebugEvent.swift */,
 				0C1EEB412165086A004FFAC8 /* Main.storyboard */,
 				0C1EEB442165086B004FFAC8 /* Assets.xcassets */,
 				0C1EEB462165086B004FFAC8 /* LaunchScreen.storyboard */,
@@ -140,7 +140,7 @@
 			files = (
 				0C1EEB402165086A004FFAC8 /* ViewController.swift in Sources */,
 				0C1EEB3E2165086A004FFAC8 /* AppDelegate.swift in Sources */,
-				0C1EEB50216508A4004FFAC8 /* devRunDebugEvent.swift in Sources */,
+				0CD960262167606B005B903B /* devRunDebugEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
