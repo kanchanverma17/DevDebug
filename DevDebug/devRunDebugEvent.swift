@@ -28,13 +28,15 @@ class devRunDebugEvent: NSObject {
         let actOK = UIAlertAction.init(title: "Done", style: UIAlertActionStyle.default) { (act) in
             print("option revieved ",self.pop1?.textFields?.first?.text as Any)
             var ind = 0
+            let memberVars = Mirror(reflecting: fromClass).children
             if let indexVal = Int((self.pop1?.textFields?.first?.text)!) {
                 ind = indexVal - 1
+                if memberVars.count <= ind {return}
             }else { return}
             let pop2 = UIAlertController.init(title: "Value",
-                                              message:(Mirror(reflecting: fromClass).children.compactMap { $0.value }[ind] as AnyObject).description ,
+                                              message: (memberVars.compactMap { $0.value }[ind] as AnyObject).description ,
                                               preferredStyle: UIAlertControllerStyle.alert)
-            let act = UIAlertAction.init(title: "close",
+            let act = UIAlertAction.init(title: "Close",
                                          style: UIAlertActionStyle.default,
                                          handler: nil)
             let retake = UIAlertAction.init(title: "Retry",
